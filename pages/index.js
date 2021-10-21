@@ -11,6 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import Arrowimg from '../utils/images/arrow.png';
 import Homeforsale from "./Homeforsale";
 import Footer from "../components/Footer/footer";
+import Link from 'next/link';
 
 const useStyles = makeStyles({
 
@@ -88,9 +89,11 @@ const Home = () => {
         top-notch service since the inception. The several verticals cab be further categorized into B2B, B2C and 
         B2B2C respectively.
         <br /><br />
-        
+        <Link href="/Aboutus">
         <Image src={Arrowimg} alt="Picture of the author"/>
+        </Link>
         <h4 style={{marginLeft:'3rem',marginTop:'-2.5rem'}}>Read More</h4>
+
       </Typography>
       </Grid>
      
