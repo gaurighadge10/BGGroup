@@ -14,7 +14,7 @@ const contact = () => {
         </Grid> */}
         <div className="contactUs">
         <Typography variant="h1" component="div">
-          <center>
+          <center style={{fontSize:"4rem",fontWeight:600}}>
             Contact Us
           </center>
         </Typography>
@@ -29,9 +29,11 @@ const contact = () => {
               <ContactDetails />
               <br />
               <br />
-              <div className="mapouter">
-                <div className="gmap_canvas">
-                  <iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=hadapsar,pune,411038&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0">
+              <div class="mapouter">
+                <div class="gmap_canvas">
+                  <iframe width="320" height="400" id="gmap_canvas" 
+                  src="https://maps.google.com/maps?q=hadapsar,pune,411038&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                   </iframe>
                 </div>
               </div>
