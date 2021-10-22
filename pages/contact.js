@@ -31,7 +31,12 @@ const contact = () => {
               <br />
               <div className="mapouter">
                 <div className="gmap_canvas">
-                  <iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=hadapsar,pune,411038&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0">
+                  {/* <iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=hadapsar,pune,411038&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0">
+                  </iframe> */}
+                  <iframe width="320" height="400" id="gmap_canvas" 
+                  src="https://m
+                  
+                  aps.google.com/maps?q=hadapsar,pune,411038&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0">
                   </iframe>
                 </div>
               </div>
