@@ -130,8 +130,8 @@ a {
   }
 
 .navList{
-  font-size:17px;
-  font-weight:600;
+  font-size:16px;
+  font-weight:500;
 }
 .businessTypography{
   font-weight: 500 !important;
@@ -176,7 +176,7 @@ a {
 
 @media screen and (max-width: 600px) {
   .contacttextfield {
-    width:350px !important;
+    width:250px !important;
   }}
 
 .contactbutton{
@@ -203,30 +203,43 @@ a {
     background-image:none;
     color:#0F3C59 !important;
     padding: 4em;
+    
     display: inline !important;
-    text-indent: 50px;
-    height:30vh;
+    text-indent: 20px;
+    height:20vh;
     background-size: cover;
     font-weight: 700 !important;
   }}
   @media only screen and (min-width: 768px) {
     .aboutUs{
-      background-image: url('../utils/images/aboutUs/aboutUsBanner.png');
-      text-indent: -9999px;
-      height:50vh;
+    background-image:none;
+    color:#0F3C59 !important;
+    padding: 4em;
+    display: inline !important;
+    text-indent: 50px;
+    height:20vh;
+    font-size: 20px !important;
+    background-size: cover;
+    font-weight: 700 !important;
     }
   }
   .contactUs{
     background-image: url('../utils/images/contactus/contactusbanner.png');
     text-indent: -9999px;
-    height:50vh;
+    height:50vh !important;
     background-size: cover;
   }
   @media only screen and (min-width: 768px) {
     .contactUs{
-      background-image: url('../utils/images/contactus/contactusbanner.png');
-      text-indent: -9999px;
-      height:30vh;
+    background-image:none;
+    color:#0F3C59 !important;
+    padding: 4em;
+    display: inline !important;
+    text-indent: 50px;
+    height:20vh;
+    font-size: 20px !important;
+    background-size: cover;
+    font-weight: 700 !important;
     }
   }
   @media screen and (max-width: 600px) {
@@ -260,12 +273,18 @@ a {
   padding-top:5px !important;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (max-width: 1230px) {
   .navbarInfo {
-    direction:column !important;
+    /* direction:row !important;
+    margin-left:1em !important; */
     /* justify-content:flex-end !important; */
-    align-items:center !important;
-    /* margin-left:0rem !important;
-    padding-top:0px !important; */
+    /* padding: 0rem !important; */
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .navbarInfo {
+    display: none !important;
   }
 }

@@ -10,12 +10,9 @@ const aboutus = () => {
   return (
     <>
       <Layout title="Aboutus" >
-        {/* <Grid item xs={12} sm={12} md={12}>
-          <Image src={AboutUsBanner} alt="Picture of the author" />
-        </Grid> */}
         <div className="aboutUs">
         <Typography variant="h1" component="div">
-          <center>
+          <center style={{fontSize:"4rem",fontWeight:600}}>
             About Us
           </center>
         </Typography>
@@ -77,8 +74,8 @@ const aboutus = () => {
           <Grid style={{height:"200px",width:"200px" ,border:"1px solid #9E9E9E"}}>
             <Image src={Director} alt="Picture of the director" />
           </Grid>
-          <Typography variant="caption" gutterBottom component="div">
-            Name Surname
+          <Typography variant="h6" gutterBottom component="div">
+          Mr. Vivek Gavhane
           </Typography>
         </center>
       </Layout>
