@@ -60,9 +60,9 @@ const Homeforsale = () => {
             Please Feel Free To Contact
             <br />
             <br />
-            <Image src={Arrowimg} alt="Picture of the author"/>
-        <h4 style={{marginLeft:'3rem',marginTop:'-2.5rem',color:'#003F68',fontFamily:'Segoe UI',fontWeight:'bold',fontSize:'18px'}}>Know More</h4>
-
+            {/* <Image src={Arrowimg} alt="Picture of the author"/>
+            <h4 style={{marginLeft:'3rem',marginTop:'-2.5rem',color:'#003F68',fontFamily:'Segoe UI',fontWeight:'bold',fontSize:'18px'}}>Know More</h4>
+ */}
 
         </p>
          

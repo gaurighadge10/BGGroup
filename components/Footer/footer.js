@@ -1,32 +1,3 @@
-// import {
-//     Grid, Stack,Paper } from "@material-ui/core";
-
-// import { styled } from '@material-ui/core';
-
-//     const Item = styled(Paper)(({ theme }) => ({
-//         ...theme.typography.body2,
-//         padding: theme.spacing(1),
-//         textAlign: 'center',
-//         color: theme.palette.text.secondary,
-//       }));
-  
-//   const Footer = () => {
-  
-   
-  
-  
-//     return (
-//       <>
-//     Footer
-//       </>
-//     );
-//   };
-  
-//   export default Footer;
-  
-  
-  
-  
 import React from "react";
 import NextLink from "next/link";
 import { makeStyles } from "@material-ui/core/styles";
@@ -53,6 +24,7 @@ export default function Footer() {
     
     spacing={2} columns={3}
     style={{marginTop:'2rem',paddingLeft:'10rem'}}
+    
      >
     
   <Grid item xs={12} sm={4} md={4}>
@@ -61,7 +33,7 @@ export default function Footer() {
   </NextLink>
   </div>
   </Grid>
-  <Grid item xs={12} sm={4} md={4}>
+  <Grid item xs={12} sm={4} md={4} className="footer">
   <Grid >
   <Grid >
   <Link href="mailto:sales@bggroup.com">
@@ -90,14 +62,20 @@ export default function Footer() {
  
     
   </Grid>
+  
   <Grid  item xs={12} sm={4} md={4}>
   <Grid item >
   <Grid style={{fontFamily:'Segoe UI ',fontWeight:'600',fontSize:'17px',paddingBottom: '14px'}} >
-  About Us
+   <Link href="/Aboutus">
+  About Us 
+  </Link>
   </Grid>
   
+  
   <Grid item style={{fontFamily:'Segoe UI ',fontWeight:'600',fontSize:'17px'}}>
+  <Link href="/Ashishtradingcompany">
   Business Verticals
+  </Link>
   </Grid>
   </Grid>
  
