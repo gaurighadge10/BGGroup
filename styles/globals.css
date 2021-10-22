@@ -188,6 +188,7 @@ a {
  text-transform: none !important;
 }
 
+
 @media screen and (max-width: 600px) {
   .imgGraph {
     width:250px !important;
@@ -269,4 +270,9 @@ a {
     /* margin-left:0rem !important;
     padding-top:0px !important; */
   }
+}
+@media only screen and (min-width: 768px) {
+.footer{
+margin-left: -3rem !important;
+}
 }

@@ -60,7 +60,8 @@ function Dropdown() {
         // anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
         {menuList.map(menu=>(
-          <div>
+         <>
+         <div>
             <MenuItem style={{width:"250px", fontSize:"12px"}} key="menu.index">
                <Link
                 // className={menu.cName}
@@ -73,7 +74,8 @@ function Dropdown() {
             </MenuItem>
           <Divider />
         <br />
-      </div>       
+      </div>   
+      </>    
       ))}
     </Menu>
     </>

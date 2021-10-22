@@ -46,7 +46,7 @@ const aboutus = () => {
           <Grid container spacing={2} style={{backgroundColor:"#EAEBEF",padding:"2rem"}}>
             <Grid item xs={12} sm={6} md={6} style={{fontSize:"30px",fontWeight:"600"}}>
               <center>
-              What we've <br />Done
+              What we have <br />Done
               </center>
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
