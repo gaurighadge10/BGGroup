@@ -14,6 +14,14 @@ const useStyles = makeStyles((theme) => ({
   mainbar: {
     flexGrow: 1,
   },
+  menuListContainer:{
+    '& ul':{
+      padding: '0 !important',
+      '& div':{
+        borderBottom: '1px solid grey'
+      }
+    }
+  },
   sectionDesktop: {
     display: 'none',
     [ theme.breakpoints.up("md") ]: {
@@ -49,10 +57,12 @@ const useStyles = makeStyles((theme) => ({
     '& ul': {
       listStyle: 'none',
       '& li': {
+        fontSize:'16px !important',
         margin: '10px 0px',
       },
     },
   },
+
 
 }));
 export default useStyles;
