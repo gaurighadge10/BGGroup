@@ -24,6 +24,7 @@ export default function Footer() {
     
     spacing={2} columns={3}
     style={{marginTop:'2rem',paddingLeft:'10rem'}}
+    
      >
     
   <Grid item xs={12} sm={4} md={4}>
@@ -32,7 +33,7 @@ export default function Footer() {
   </NextLink>
   </div>
   </Grid>
-  <Grid item xs={12} sm={4} md={4}>
+  <Grid item xs={12} sm={4} md={4} className="footer">
   <Grid >
   <Grid >
   <Link href="mailto:sales@bggroup.com">

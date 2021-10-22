@@ -41,6 +41,7 @@ const inputFieldValues = [
 
 const ContactForm = () => {
     return (
+      <>
       <Grid>
         <Typography variant="h5" gutterBottom component="div">
           Send us message
@@ -49,6 +50,7 @@ const ContactForm = () => {
         <br />
         {inputFieldValues.map((inputFieldValue, index) => {
           return (
+            <>
           <div>
             <Typography required id="outlined-required" 
                         variant="body1" label={inputFieldValue.required} 
@@ -63,6 +65,7 @@ const ContactForm = () => {
                        className="contacttextfield" /> */}
             <br />
           </div>
+          </>
         );
       })}
       <br />
@@ -72,6 +75,7 @@ const ContactForm = () => {
           Contact us now
       </Button>
     </Grid>
+    </>
     );
   };
 export default ContactForm;

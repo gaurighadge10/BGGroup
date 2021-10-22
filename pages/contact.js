@@ -23,7 +23,7 @@ const contact = () => {
           <Grid container spacing={0}>
             <Grid item xs={12} sm={12} md={6} style={{padding:"5rem"}}>
               <Typography variant="h5" gutterBottom component="div">
-                Let's Connect
+                Let&apos;s Connect
               </Typography>
               <br />
               <ContactDetails />
