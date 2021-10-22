@@ -4,11 +4,12 @@ import Image from 'next/image';
 import { Grid, makeStyles,Stack , Container, Typography, Box} from "@material-ui/core";
 import ContactDetails from "../components/contactDetails";
 import ContactForm from "../components/ContactForm";
-
+import Navbar from "../components/Navbar/Navbar";
 const contact = () => {
   return (
     <>
       <Layout title="Contact">
+        <Navbar />
         {/* <Grid item xs={12} sm={12} md={12}>
            <Image src={contactUs} alt="Picture of the author" />
         </Grid> */}

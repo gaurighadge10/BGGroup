@@ -48,7 +48,7 @@ const Layout = ({ title, description, children }) => {
       <ThemeProvider theme={theme} >
         <CssBaseline />
        
-        < Navbar />
+        {/* < Navbar /> */}
       
         <Container className={classes.main} maxWidth="false" disableGutters ="false" style={{backgroundColor:"#ffffff"}} >
           {children}

@@ -11,7 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import Arrowimg from '../utils/images/arrow.png';
 import Homeforsale from "./Homeforsale";
 import Footer from "../components/Footer/footer";
-
+import Navbar from '../components/Navbar/Navbar';
 const useStyles = makeStyles({
 
 });
@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <>
       <Layout title="Home" >
-     
+       <Navbar />
         {/* <div  className={classes.image} >
 
        <Image src={item} alt="Picture of the author" fluid/> 
