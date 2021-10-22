@@ -45,7 +45,7 @@ function Dropdown() {
   return (
     <>
       <Box>
-        <Button onClick={handleClick} style={{textTransform: "none",fontWeight:"600",fontSize:"17px"}}>
+        <Button onClick={handleClick} style={{textTransform: "none",fontSize:"16px"}}>
           Business Verticals<FaAngleDown className={classes.dropdownIcon} />
         </Button>
     
@@ -56,6 +56,7 @@ function Dropdown() {
         open={open}
         onClose={handleClose}
         onClick={handleClose}
+        className={classes.menuListContainer}
         // transformOrigin={{ horizontal: 'right', vertical: 'top' }}
         // anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
@@ -71,7 +72,6 @@ function Dropdown() {
                 {menu.title}
               </Link>
             </MenuItem>
-          <Divider />
         <br />
       </div>       
       ))}
