@@ -33,7 +33,7 @@ import useStyles from "./NavbarStyle";
   ];
 
 function Dropdown() {
-  const classes = useStyles();
+  // const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -46,7 +46,7 @@ function Dropdown() {
     <>
       <Box>
         <Button onClick={handleClick} style={{textTransform: "none",fontSize:"16px"}}>
-          Business Verticals<FaAngleDown className={classes.dropdownIcon} />
+          Business Verticals<FaAngleDown className="dropdownIcon" />
         </Button>
     
       </Box>
@@ -56,14 +56,15 @@ function Dropdown() {
         open={open}
         onClose={handleClose}
         onClick={handleClose}
-        className={classes.menuListContainer}
+        className="menuListContainer"
         // transformOrigin={{ horizontal: 'right', vertical: 'top' }}
         // anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
         {menuList.map(menu=>(
-         <>
-         <div>
-            <MenuItem style={{width:"250px", fontSize:"12px"}} key="menu.index">
+
+          <div>
+            <MenuItem style={{width:"250px",margin: '0', fontSize:"12px",borderBottom: "1px solid grey"}} key="menu.index">
+
                <Link
                 // className={menu.cName}
                 href={menu.path}

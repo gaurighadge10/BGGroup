@@ -1,15 +1,16 @@
 import Layout from "../components/Layout";
-import AboutUsBanner from "../utils/images/aboutUs/aboutUsBanner.png"
 import Image from 'next/image';
 import { Grid, Container,Stack,Box,Typography,Button } from "@material-ui/core";
 import AboutUsContent from "../components/aboutUsContent";
 import AboutUs from "../utils/images/aboutUs/about1.png";
 import Director from "../utils/images/director.jpg"
 import Footer from "../components/Footer/footer";
+import Navbar from "../components/Navbar/Navbar";
 const aboutus = () => {
   return (
     <>
       <Layout title="Aboutus" >
+        <Navbar />
         <div className="aboutUs">
         <Typography variant="h1" component="div">
           <center style={{fontSize:"4rem",fontWeight:600}}>

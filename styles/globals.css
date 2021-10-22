@@ -133,6 +133,7 @@ a {
 .navList{
   font-size:16px;
   font-weight:500;
+  padding:1rem !important;
 }
 .businessTypography{
   font-weight: 500 !important;
@@ -231,10 +232,10 @@ a {
     height:50vh !important;
     background-size: cover;
   }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-width:810px) {
     .contactUs{
     background-image:none;
-    color:#0F3C59 !important;
+    color:#0F3C59 !important; 
     padding: 4em;
     display: inline !important;
     text-indent: 50px;
@@ -248,7 +249,7 @@ a {
     .contactUs {
       background-image:none;
       color:#0F3C59 !important;
-      padding: 4em;
+      padding: 3em;
       display: inline !important;
       text-indent: 50px;
       height:30vh;
@@ -290,8 +291,90 @@ a {
     display: none !important;
   }
 }
+
+
+.navbar {
+  background-color:#ffffff;
+  height : 110px;
+  padding: 5 20px !important;
+  
+  
+}
+.a {
+  color: black !important;
+  margin: 0px 15px !important;
+}
+.mainbar {
+  flex-grow: 1 !important;
+}
+/* .menuListContainer{ */
+  .menuListContainer{
+    padding: 0px !important;
+  }
+  /* .div{
+      border-bottom: 1px solid grey;
+     }
+     */
+
+.sectionDesktop {
+  display: none !important;
+}
+@media only screen and (min-width: 700px) { 
+  .sectionDesktop {
+    display: flex !important;
+  padding:0px 5px !important;}
+  
+}
+.mobileDesktop {
+  display:none;
+  /* [theme.breakpoints.down("sm") ]: {
+    display: flex;
+  } */
+}
+@media screen and (max-width: 600px) {
+  .mobileDesktop {
+    display: flex;
+  }}
+mobilemenu{
+  color: black;
+}
+nabarItem {
+  list-style: none;
+  margin-top: 15px;
+}
+@media screen and (max-width: 700px) {
+  .mobileDesktop {
+    display: flex;
+  }}
+/* // mobilemeuDesign {
+//   height: 'auto,
+//   [ theme.breakpoints.up("md") ]: {
+//     // display: 'none',
+//   },
+// }, */
+dropdownIcon{
+  margin-top:3px;
+}
+
+drawer {
+  width: drawerWidth;
+  text-align: center;
+ 
+}
+.ul{
+  list-style: none;}
+
+
+.li {
+    font-size:16px !important;
+    /* margin: 10px 0px; */
+    
+  }
+
+
 @media only screen and (min-width: 768px) {
 .footer{
 margin-left: -3rem !important;
 }
 }
+

@@ -13,7 +13,7 @@ import Image from 'next/image'
 {/* <Image src={bgLogo} /> */}
 
 const Navbar = () => {
-  const classes = useStyles();
+  // const classes = useStyles();
   const [ dropdown, setDropdown ] = useState(false);
   // mobile menu
   const [ mobileMenu, setMobileMenu ] = useState(null);
@@ -36,7 +36,7 @@ const Navbar = () => {
           alignItems="flex-start"
           >asdsfcd
         </Grid> */}
-      <Drawer style={{ width: 400, }} className={classes.mobilemeuDesign} open={drawerOpen} onClose={() => setDraweropen(false)}>
+      <Drawer style={{ width: 400, }} className="mobilemeuDesign" open={drawerOpen} onClose={() => setDraweropen(false)}>
       <Grid container className="navbarInfo">
       <Grid item xs={6} sm={2}>
         <Grid container spacing={2}>
@@ -60,7 +60,7 @@ const Navbar = () => {
       </Grid>
       </Grid>
         <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '10px', }}>
-          <li className={classes.nabarItem} >
+          <li className="nabarItem">
             <NextLink href="/" >
               <a> <Image src={bgLogo} alt="Picture of the author" height="70%" width="70%" /> </a>
             </NextLink>
@@ -69,9 +69,9 @@ const Navbar = () => {
             <FaTimes />
           </IconButton>
         </div>
-        <div className={classes.drawer}>
+        <div className="drawer">
           <ul>
-            <li>
+            <li className="nabarItem">
               <NextLink onClick={() => setDraweropen(false)} href="/Home" >
                 <a> Home </a>
               </NextLink>
@@ -93,7 +93,7 @@ const Navbar = () => {
         </div>
       </Drawer>
       {/* main app bar */}
-      <AppBar position="fixed" className={classes.navbar} >
+      <AppBar position="fixed" className="navbar">
        <Grid container className="navbarInfo">
       <Grid item xs={6} sm={2} md={2}>
         <Grid container spacing={2}>
@@ -117,14 +117,14 @@ const Navbar = () => {
       </Grid>
       </Grid>
       <Toolbar>
-          <div className={classes.mainbar} >
-            <li className={classes.nabarItem} >
+          <div className="mainbar">
+            <li className="nabarItem">
               <NextLink href="/" >
                 <a> <Image src={bgLogo} alt="Picture of the author" height="70%" width="70%" /> </a>
               </NextLink>
             </li>
           </div>
-          <div className={classes.sectionDesktop}>
+          <div className="sectionDesktop">
            <ul style={{ display: 'flex', listStyle: 'none', justifyContent: 'center', alignItems: 'center', }} >
             <li className='navList'>
                 <NextLink href="/Home" >
@@ -146,9 +146,9 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className={classes.mobileDesktop}>
+          <div className="mobileDesktop">
             <IconButton onClick={() => setDraweropen(true)} >
-              <FaBars className={classes.mobilemenu} />
+              <FaBars className="mobilemenu" />
             </IconButton>
           </div>
         </Toolbar>
