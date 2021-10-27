@@ -43,7 +43,7 @@ function Dropdown() {
     setAnchorEl(null);
   };
   return (
-    <>
+ <>
       <Box>
         <Button onClick={handleClick} style={{textTransform: "none",fontSize:"16px"}}>
           Business Verticals<FaAngleDown className="dropdownIcon" />
@@ -62,8 +62,8 @@ function Dropdown() {
       >
         {menuList.map(menu=>(
 
-          <div>
-            <MenuItem style={{width:"250px",margin: '0', fontSize:"12px",borderBottom: "1px solid grey"}} key="menu.index">
+          <div key={menu.index}>
+            <MenuItem style={{width:"250px",margin: '0', fontSize:"12px",borderBottom: "1px solid grey"}}>
 
                <Link
                 // className={menu.cName}
@@ -76,10 +76,11 @@ function Dropdown() {
             </MenuItem>
         <br />
       </div>   
-      </>    
+   
       ))}
     </Menu>
     </>
+
   );
 }
 

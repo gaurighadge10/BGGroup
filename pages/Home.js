@@ -12,7 +12,7 @@ import Arrowimg from '../utils/images/arrow.png';
 import Homeforsale from "./Homeforsale";
 import Footer from "../components/Footer/footer";
 import Link from 'next/link';
-
+import Navbar from '../components/Navbar/Navbar';
 const useStyles = makeStyles({
 
 });
@@ -24,6 +24,7 @@ const Home = () => {
   return (
     <>
       <Layout title="Home" >
+      <Navbar />
      
         {/* <div  className={classes.image} >
 
